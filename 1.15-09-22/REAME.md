@@ -17,3 +17,8 @@ Running Text
 
 
 ## Discussion of Doubts
+
+- setTimeout => Calls a func once after a given period of time
+- setInterval => Calls a func repeatedly after a period of time
+- clearTimeout => Clears a timeout
+- clearInterval => Clears a interval
