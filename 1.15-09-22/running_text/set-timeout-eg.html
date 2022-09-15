@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout example</title>
+</head>
+<body>
+    <h2>Set timeout example</h2>
+    <div id="root"></div>
+    <script>
+        const dontRunTimer = true
+        const myFunction = (msg) => {
+            document.getElementById("root").innerHTML = "Written after some time with message " + msg
+        }
+        const timer = setTimeout(myFunction,5000)
+        // setTimeout(()=>myFunction("Set timeout msg"),5000)
+        // setTimeout(()=>{
+        //     document.getElementById("root").innerHTML = "Another msg"
+        // },5000)
+        // setTimeout(function(){
+        //     document.getElementById("root").innerHTML = "Another msg without ES6"
+        // },5000)
+        if(dontRunTimer){
+            clearTimeout(timer)
+        }
+
+
+
+
+        // setTimeout(myFunction(),5000) // wrong
+    </script>
+</body>
+</html>
