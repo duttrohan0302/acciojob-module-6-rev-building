@@ -25,6 +25,22 @@ submitButton.addEventListener("click",()=>{
 
 })
 
+let count = 0
+const interval = setInterval(printing,2000)
+
+function printing(){
+    console.log("hello")
+    count=count+1
+    console.log(count)
+
+    if(count>=5){
+        clearInterval(interval)
+    }
+    
+}
+
+
+
 
 
 // setTimeout(myFunction(),5000) // wrong
